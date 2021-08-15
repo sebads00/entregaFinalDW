@@ -1,0 +1,43 @@
+@media only screen and (max-width: 600px) {
+    .principal {
+        display: flex;
+        flex-direction: column;
+    }
+    .principal p {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .principal p {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .principal {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        gap: 2rem;
+        margin-left: 1rem;
+    }
+
+}
+.principal__img {
+    min-height: 180px;
+    overflow: hidden;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+}
+.imagenHome {
+    height: 30rem;
+}
+.principal img {
+    width: auto;
+}
