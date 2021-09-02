@@ -14,5 +14,13 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebads00/entregaFinalDW.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sebads00/entregaFinalDW/issues"
+  },
+  "homepage": "https://github.com/sebads00/entregaFinalDW#readme",
   "description": ""
 }

@@ -1,27 +1,44 @@
 .estreno {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     &__imagen {
         width: 96%;
         max-width: 960px;
         margin: 0 auto;
+
     }
-    p {
+
+    &__p {
         font-size: 1.6rem;
     }
-    img {
+
+    & img {
         width: 100%;
         height: auto;
     }
+
+    &__trailer {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
 }
+
 @media only screen and (min-width: 768px) {
     .estreno {
         display: grid;
         grid-template-columns: 30% 70%;
         gap: 2rem;
         margin-left: 1rem;
-    }
-    .estreno img {
-        width: 90%;
-        height: auto;
+
+
+        & img {
+            width: 90%;
+            height: auto;
+        }
     }
 }

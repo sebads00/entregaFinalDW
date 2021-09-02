@@ -118,7 +118,8 @@ footer svg {
     font-size: 1rem; } }
 
 .contacto {
-  display: block;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center; }
   .contacto__imagen {
@@ -146,12 +147,12 @@ footer svg {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    gap: 3rem; } }
+    gap: 3rem;
+    margin-right: 12rem; } }
 
 @media only screen and (min-width: 768px) {
   .formulario__contenedor {
-    width: 450px;
-    margin: 0 auto; } }
+    width: 450px; } }
 
 .formulario {
   color: #EFEACC;
@@ -217,7 +218,8 @@ select {
 .checkbox__contenedor {
   display: flex;
   flex-direction: column;
-  background-image: none; }
+  background-image: none;
+  align-items: center; }
 
 label {
   align-items: center; }
@@ -259,16 +261,24 @@ label {
   width: auto; }
 
 .estreno {
-  display: block; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
   .estreno__imagen {
     width: 96%;
     max-width: 960px;
     margin: 0 auto; }
-  .estreno p {
+  .estreno__p {
     font-size: 1.6rem; }
   .estreno img {
     width: 100%;
     height: auto; }
+  .estreno__trailer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem; }
 
 @media only screen and (min-width: 768px) {
   .estreno {
@@ -276,12 +286,30 @@ label {
     grid-template-columns: 30% 70%;
     gap: 2rem;
     margin-left: 1rem; }
-  .estreno img {
-    width: 90%;
-    height: auto; } }
+    .estreno img {
+      width: 90%;
+      height: auto; } }
 
-@media (min-width: 768px) {
-  .filmografia {
+.filmografia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .filmografia__parrafo {
+    color: #EFEACC;
+    font-size: 1.2rem;
+    line-height: 3rem; }
+  .filmografia__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid #EFEACC 0.1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem; }
+
+@media only screen and (min-width: 768px) {
+  .filmografia__contenedor {
     display: grid;
     grid-template-columns: 25% 75%;
     gap: 2rem;
@@ -289,17 +317,9 @@ label {
     margin-left: 1rem;
     margin-bottom: 1rem; } }
 
-.parrafoFilmografia {
-  color: #EFEACC;
-  font-size: 1.6rem;
-  line-height: 3rem; }
-
-.contenedorFilmografia {
-  border-top: solid #EFEACC 0.1rem; }
-
 .contenedorGaleria {
   display: block;
-  gap: 3rem; }
+  gap: 30rem; }
 
 @media only screen and (min-width: 768px) {
   .contenedorGaleria {
@@ -329,3 +349,23 @@ label {
 .imgGaleria {
   width: 100%;
   height: 100%; }
+
+.imagen {
+  margin-bottom: 1rem; }
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+  .error h1 {
+    color: #EFEACC;
+    font-size: 4rem;
+    text-align: center; }
+  .error__imagen {
+    height: 7rem; }
+  .error img {
+    width: 100%;
+    height: auto; }

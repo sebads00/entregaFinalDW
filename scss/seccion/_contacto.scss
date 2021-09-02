@@ -1,5 +1,6 @@
 .contacto {
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     &__imagen {
@@ -32,12 +33,12 @@
         align-items: center;
         justify-content: center;
         gap: 3rem;
+        margin-right: 12rem;
     }
 }
 @media only screen and (min-width: 768px){
     .formulario__contenedor{
-        width: 450px;
-        margin: 0 auto; 
+        width: 450px; 
     }
 }
 .formulario {
@@ -105,6 +106,7 @@ select {
     display: flex;
     flex-direction: column;
     background-image: none;
+    align-items: center;
 }
 label{
     align-items: center;
