@@ -307,11 +307,11 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: solid #EFEACC 0.1rem;
     margin-bottom: 1rem;
     padding-bottom: 1rem; }
-  .filmografia__contenedor:last-child {
-    border-bottom: none; }
+
+.separador {
+  border-bottom: solid #EFEACC 0.1rem; }
 
 @media only screen and (min-width: 768px) {
   .filmografia__contenedor {
